@@ -27,7 +27,7 @@
       <service_fmri value='svc:/smartdc/applications/config-agent' />
     </dependency>
     <method_context>
-      <method_credential group='hadoop' user='zookeeper'/>
+      <method_credential group='zookeeper' user='zookeeper'/>
     </method_context>
     <exec_method name='start' type='method' exec='/opt/local/sbin/zkServer.sh start' timeout_seconds='60'/>
     <exec_method name='stop' type='method' exec='/opt/local/sbin/zkServer.sh stop' timeout_seconds='60'/>

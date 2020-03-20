@@ -56,7 +56,8 @@ function zk_common_delegated_dataset
     fi
 
     chmod 777 ${ZK_ROOT}
-    sudo -u zookeeper mkdir -p ${ZK_ROOT}/zookeeper
+    mkdir -p ${ZK_ROOT}/zookeeper
+    chown -R zookeeper:zookeeper ${ZK_ROOT}/zookeeper
 }
 
 # sets up hourly log rotation
